@@ -1,0 +1,17 @@
+#new{
+ width: 150px;
+ height: 50px;
+ border: 2px solid #000;
+ background-color: #000;
+ border-radius: 1rem;
+ transition: 1s;
+}
+
+#new:hover {
+ width: 300px;
+ height: 100px;
+ border: 2px solid green;
+ background-color: yellow;
+ border-radius: 0;
+ transform: translateX(50%);
+}

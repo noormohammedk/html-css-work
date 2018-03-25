@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>timing-function</title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+  var init = function() {
+    var box = document.getElementsByClassName('box')[0];
+    var play = document.getElementById('play');
+    var pause = document.getElementById('pause');
+
+    document.getElementById('play').addEventListener('click', function(){
+      box.style.animationPlayState = "running";
+    }, false);
+
+    document.getElementById('pause').addEventListener('click', function(){
+      box.style.animationPlayState = "paused";
+    }, false);
+  };
+  document.addEventListener('DOMContentLoaded', init, false);
+
+  </script>
+
+</head>
+<body>
+  <!-- CSS ANIMATIONS AND TRANSITIONS for the Modern Web-978-0-133-98050-9 -->
+  <div class="container">
+    <div class="box"></div>
+    <button id="play">Play</button>
+  	<button id="pause">Pause</button>
+    <!-- <div class="parent" style="display:none">
+    <div class="child" style="height:100px; width:100px; border:2px solid red"></div>
+  </div> -->
+</div>
+</body>
+</html>

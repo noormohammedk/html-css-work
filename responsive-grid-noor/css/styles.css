@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Lato" rel="stylesheet");
+body {
+  background-color: #F1C40F;
+  font-family: Lato; }
+
+.header {
+  position: relative;
+  border: 1px solid transparent; }
+  .header h1 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.6rem;
+    margin: 1rem auto;
+    background-color: #f1c40f;
+    position: relative;
+    z-index: 2;
+    width: 5em; }
+  .header::before {
+    content: '';
+    border: 1px solid  #FFFFFF;
+    border-width: 0 0 1px 0;
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    z-index: 1; }
+
+.main {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .main .skill {
+    border-radius: 20px;
+    display: inline-block;
+    width: 25%;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-sizing: border-box;
+    margin: -2px;
+    border: 15px solid #F1C40F;
+    padding: 12px; }
+    .main .skill img {
+      width: 35%;
+      margin-top: 10%; }
+    .main .skill .name {
+      font-size: 1.2em;
+      font-weight: 100; }
+    .main .skill .discription {
+      font-size: 1em; }
+
+@media (max-width: 959px) {
+  .main {
+    width: 100%; }
+    .main .skill {
+      width: 33%; } }
+@media (max-width: 640px) {
+  .main {
+    width: 100%; }
+    .main .skill {
+      width: 50%; }
+      .main .skill img {
+        width: 35%; }
+      .main .skill .discription {
+        font-size: 1em; }
+      .main .skill .name {
+        font-size: 1em; } }
+@media (max-width: 490px) {
+  .main {
+    width: 100%; }
+    .main .skill {
+      width: 70%; }
+      .main .skill .discription {
+        font-size: 0; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+body {
+  padding: 15px;
+  text-align: center;
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+}
+
+.doAnim {
+  animation: myAnim 2s backwards 2s;
+}
+
+.reset {
+  animation: reset .5s;
+}
+
+button {
+  margin: 50px 20px;
+}
+
+.p {
+  padding-top: 100px;
+}
+
+@keyframes myAnim {
+
+  from {
+    background-color: blue;
+  }
+
+  to {
+    background-color: pink;
+    transform: translateX(500px) scale(.5);
+  }
+
+}
+
+@keyframes reset {
+
+  50% {
+    background-color: white;
+  }
+
+  to {
+    background-color: red;
+  }
+
+}

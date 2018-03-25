@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>
+    animation-fill-mode
+  </title>
+  <link rel="stylesheet" href="main.css">
+  <script>
+  var init = function() {
+    var start = document.querySelectorAll('button')[0],
+    reset = document.querySelectorAll('button')[1],
+    ball = document.querySelector('.ball');
+
+    start.addEventListener('click', function () {
+      ball.classList.add('doAnim');
+      ball.classList.remove('reset');
+    }, false);
+
+    reset.addEventListener('click', function () {
+      ball.classList.remove('doAnim');
+      ball.classList.add('reset');
+    }, false);
+  };
+  document.addEventListener('DOMContentLoaded', init, false);
+  </script>
+</head>
+<body>
+  <h1>Example with animation-fill-mode: backwards (2)</h1>
+
+  <div class="ball"></div>
+
+  <button>START THE ANIMATION</button>
+
+  <button>RESET THE ANIMATION</button>
+
+  <p class="p">Demo by Louis Lazaris. <a href="http://www.sitepoint.com/understanding-css-animation-fill-mode-property" target="_blank">See article</a>.</p>
+</body>
+</html>

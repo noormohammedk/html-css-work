@@ -1,0 +1,34 @@
+body {
+  font: .7em Arial;
+}
+
+.cartoon {
+  width: 125px;
+  height: 150px;
+  background: url(./sprite.jpg) left;
+  transition: 3s steps(56);
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+#go:target .cartoon {
+  background-position: -7000px 0;
+}
+
+.container {
+  margin: 20px auto;
+  width: 150px;
+}
+
+a {
+  padding: 5px 10px;
+  background: blue;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:hover {
+  opacity: 0.6;
+}

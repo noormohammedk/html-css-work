@@ -1,0 +1,30 @@
+.main{
+  width:1200px;
+  margin: 0px auto;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  .skill{
+    border-radius: 20px;
+    display: inline-block;
+    width: $dimension-ref;
+    background-color:#FFFFFF;
+    text-align:center;
+    box-sizing:border-box;
+    margin: -2px;
+    border: 15px solid #F1C40F;
+    padding: 12px;
+    img{
+       width:35%;
+       margin-top: 10%;
+     }
+    .name{
+      font-size: 1.2em;
+      font-weight: 100;
+    }
+    .discription{
+      font-size: 1em;
+    }
+  }
+}

@@ -1,0 +1,389 @@
+<style>
+.container {
+width:800px;
+height:600px;
+border: 2px solid black;
+}
+
+li {
+display:inline-block;
+float:left;
+}
+
+a, a:visited {
+color:#000;
+margin:5px;
+}
+
+a:hover {
+color:#f00;
+}
+
+.box {
+width:100px;
+height:100px;
+background:#000;
+margin:30px;
+float:left;
+}
+
+h1 {
+color:#000;
+}
+
+#flash:target {
+-webkit-animation-name: flash;
+-moz-animation-name: flash;
+-ms-animation-name: flash;
+-o-animation-name: flash;
+animation-name: flash;
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+@-webkit-keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
+
+@-moz-keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
+
+@-ms-keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
+
+@-o-keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
+
+@keyframes flash {
+0%, 50%, 100% {opacity: 1;}
+25%, 75% {opacity: 0;}
+}
+
+#bounce:target{
+-webkit-animation-name: bounce;
+-moz-animation-name: bounce;
+-ms-animation-name: bounce;
+-o-animation-name: bounce;
+animation-name: bounce;
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+
+@-webkit-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+40% {-webkit-transform: translateY(-30px);}
+60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+40% {-moz-transform: translateY(-30px);}
+60% {-moz-transform: translateY(-15px);}
+}
+
+@-ms-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {-ms-transform: translateY(0);}
+40% {-ms-transform: translateY(-30px);}
+60% {-ms-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+40% {-o-transform: translateY(-30px);}
+60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+40% {transform: translateY(-30px);}
+60% {transform: translateY(-15px);}
+}
+@-webkit-keyframes shake {
+0%, 100% {-webkit-transform: translateX(0);}
+10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+0%, 100% {-moz-transform: translateX(0);}
+10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-ms-keyframes shake {
+0%, 100% {-ms-transform: translateX(0);}
+10%, 30%, 50%, 70%, 90% {-ms-transform: translateX(-10px);}
+20%, 40%, 60%, 80% {-ms-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+0%, 100% {-o-transform: translateX(0);}
+10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+0%, 100% {transform: translateX(0);}
+10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+#shake:target {
+-webkit-animation-name: shake;
+-moz-animation-name: shake;
+-ms-animation-name: shake;
+-o-animation-name: shake;
+animation-name: shake;
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+@-webkit-keyframes swing {
+20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
+20% { -webkit-transform: rotate(15deg); }
+40% { -webkit-transform: rotate(-10deg); }
+60% { -webkit-transform: rotate(5deg); }
+80% { -webkit-transform: rotate(-5deg); }
+100% { -webkit-transform: rotate(0deg); }
+}
+
+@-moz-keyframes swing {
+20% { -moz-transform: rotate(15deg); }
+40% { -moz-transform: rotate(-10deg); }
+60% { -moz-transform: rotate(5deg); }
+80% { -moz-transform: rotate(-5deg); }
+100% { -moz-transform: rotate(0deg); }
+}
+
+@-ms-keyframes swing {
+20% { -ms-transform: rotate(15deg); }
+40% { -ms-transform: rotate(-10deg); }
+60% { -ms-transform: rotate(5deg); }
+80% { -ms-transform: rotate(-5deg); }
+100% { -ms-transform: rotate(0deg); }
+}
+
+@-o-keyframes swing {
+20% { -o-transform: rotate(15deg); }
+40% { -o-transform: rotate(-10deg); }
+60% { -o-transform: rotate(5deg); }
+80% { -o-transform: rotate(-5deg); }
+100% { -o-transform: rotate(0deg); }
+}
+
+@keyframes swing {
+20% { transform: rotate(15deg); }
+40% { transform: rotate(-10deg); }
+60% { transform: rotate(5deg); }
+80% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+
+#swing:target {
+-webkit-transform-origin: top center;
+-moz-transform-origin: top center;
+-ms-transform-origin: top center;
+-o-transform-origin: top center;
+transform-origin: top center;
+-webkit-animation-name: swing;
+-moz-animation-name: swing;
+-ms-animation-name: swing;
+-o-animation-name: swing;
+animation-name: swing;
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+@-webkit-keyframes wiggle {
+0% { -webkit-transform: skewX(9deg); }
+10% { -webkit-transform: skewX(-8deg); }
+20% { -webkit-transform: skewX(7deg); }
+30% { -webkit-transform: skewX(-6deg); }
+40% { -webkit-transform: skewX(5deg); }
+50% { -webkit-transform: skewX(-4deg); }
+60% { -webkit-transform: skewX(3deg); }
+70% { -webkit-transform: skewX(-2deg); }
+80% { -webkit-transform: skewX(1deg); }
+90% { -webkit-transform: skewX(0deg); }
+100% { -webkit-transform: skewX(0deg); }
+}
+
+@-moz-keyframes wiggle {
+0% { -moz-transform: skewX(9deg); }
+10% { -moz-transform: skewX(-8deg); }
+20% { -moz-transform: skewX(7deg); }
+30% { -moz-transform: skewX(-6deg); }
+40% { -moz-transform: skewX(5deg); }
+50% { -moz-transform: skewX(-4deg); }
+60% { -moz-transform: skewX(3deg); }
+70% { -moz-transform: skewX(-2deg); }
+80% { -moz-transform: skewX(1deg); }
+90% { -moz-transform: skewX(0deg); }
+100% { -moz-transform: skewX(0deg); }
+}
+
+@-ms-keyframes wiggle {
+0% { -ms-transform: skewX(9deg); }
+10% { -ms-transform: skewX(-8deg); }
+20% { -ms-transform: skewX(7deg); }
+30% { -ms-transform: skewX(-6deg); }
+40% { -ms-transform: skewX(5deg); }
+50% { -ms-transform: skewX(-4deg); }
+60% { -ms-transform: skewX(3deg); }
+70% { -ms-transform: skewX(-2deg); }
+80% { -ms-transform: skewX(1deg); }
+90% { -ms-transform: skewX(0deg); }
+100% { -ms-transform: skewX(0deg); }
+}
+
+@-o-keyframes wiggle {
+0% { -o-transform: skewX(9deg); }
+10% { -o-transform: skewX(-8deg); }
+20% { -o-transform: skewX(7deg); }
+30% { -o-transform: skewX(-6deg); }
+40% { -o-transform: skewX(5deg); }
+50% { -o-transform: skewX(-4deg); }
+60% { -o-transform: skewX(3deg); }
+70% { -o-transform: skewX(-2deg); }
+80% { -o-transform: skewX(1deg); }
+90% { -o-transform: skewX(0deg); }
+100% { -o-transform: skewX(0deg); }
+}
+
+@keyframes wiggle {
+0% { transform: skewX(9deg); }
+10% { transform: skewX(-8deg); }
+20% { transform: skewX(7deg); }
+30% { transform: skewX(-6deg); }
+40% { transform: skewX(5deg); }
+50% { transform: skewX(-4deg); }
+60% { transform: skewX(3deg); }
+70% { transform: skewX(-2deg); }
+80% { transform: skewX(1deg); }
+90% { transform: skewX(0deg); }
+100% { transform: skewX(0deg); }
+}
+
+#wiggle:target {
+-webkit-animation-name: wiggle;
+-moz-animation-name: wiggle;
+-ms-animation-name: wiggle;
+-o-animation-name: wiggle;
+animation-name: wiggle;
+-webkit-animation-timing-function: ease-in;
+-moz-animation-timing-function: ease-in;
+-ms-animation-timing-function: ease-in;
+-o-animation-timing-function: ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+-ms-animation-duration: 1s;
+-o-animation-duration: 1s;
+animation-duration: 1s;
+}
+@-webkit-keyframes lightSpeedIn {
+0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+60% { -webkit-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+80% { -webkit-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+100% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@-moz-keyframes lightSpeedIn {
+0% { -moz-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+60% { -moz-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+80% { -moz-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+100% { -moz-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@-ms-keyframes lightSpeedIn {
+0% { -ms-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+60% { -ms-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+80% { -ms-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+100% { -ms-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@-o-keyframes lightSpeedIn {
+0% { -o-transform: translateX(100%) skewX(-30deg); opacity: 0; }
+60% { -o-transform: translateX(-20%) skewX(30deg); opacity: 1; }
+80% { -o-transform: translateX(0%) skewX(-15deg); opacity: 1; }
+100% { -o-transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+@keyframes lightSpeedIn {
+0% { transform: translateX(100%) skewX(-30deg); opacity: 0; }
+60% { transform: translateX(-20%) skewX(30deg); opacity: 1; }
+80% { transform: translateX(0%) skewX(-15deg); opacity: 1; }
+100% { transform: translateX(0%) skewX(0deg); opacity: 1; }
+}
+
+#lightSpeedIn:target {
+-webkit-animation-name: lightSpeedIn;
+-moz-animation-name: lightSpeedIn;
+-ms-animation-name: lightSpeedIn;
+-o-animation-name: lightSpeedIn;
+animation-name: lightSpeedIn;
+-webkit-animation-timing-function: ease-out;
+-moz-animation-timing-function: ease-out;
+-ms-animation-timing-function: ease-out;
+-o-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+-webkit-animation-duration: 0.5s;
+-moz-animation-duration: 0.5s;
+-ms-animation-duration: 0.5s;
+-o-animation-duration: 0.5s;
+animation-duration: 0.5s;
+</style>
+
+div class="container">
+  <h1>Pure CSS "Click" Animations</h1>
+  <div class="box" id="flash"></div>
+  <ul>
+    <li><a href="#flash">Flash</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+
+  <div class="box" id="bounce"></div>
+  <ul>
+    <li><a href="#bounce">Bounce</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+
+  <div class="box" id="shake"></div>
+  <ul>
+    <li><a href="#shake">Shake</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+
+  <div class="box" id="swing"></div>
+  <ul>
+    <li><a href="#swing">Swing</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+
+  <div class="box" id="wiggle"></div>
+  <ul>
+    <li><a href="#wiggle">Wiggle</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+
+  <div class="box" id="lightSpeedIn"></div>
+  <ul>
+    <li><a href="#lightSpeedIn">lightSpeedIn</a></li>
+    <li><a href="#reset">Reset</a></li>
+  </ul>
+</div>

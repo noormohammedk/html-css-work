@@ -1,0 +1,38 @@
+@media (max-width: 959px) {
+  .main{
+    width: 100%;
+    .skill{
+      width:33%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .main{
+    width: 100%;
+    .skill{
+      width:50%;
+      img{
+        width:35%;
+      }
+      .discription{
+        font-size: 1em;
+      }
+      .name{
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .main {
+    width: 100%;
+     .skill{
+      width: 70%;
+      .discription{
+        font-size: 0;
+      }
+    }
+  }
+}

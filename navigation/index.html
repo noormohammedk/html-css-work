@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>navbar</title>
+  <style media="screen">
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    border-bottom: 1px solid black;
+    height: 50px;
+    position: relative;
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    right: 0px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: -64px;
+  }
+
+  #list-item {
+    list-style-type: none;
+    list-style:none;
+    text-align: center;
+  }
+
+
+  #list-item li {
+    padding: 10px 0;
+  }
+
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  #list-1-elm {
+    display: none;
+    padding: 0 30px;
+  }
+
+
+  #list-1 {
+    position: relative;
+  }
+
+  #list-1:hover #list-1-elm {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 105px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #list-1:hover {
+    background-color: #f1f1f1;
+  }
+
+  .button {
+    display: block;
+    margin: 3px 0;
+    background-color: white;
+    height: 2px;
+    width: 25px;
+  }
+
+  .dropbtn-2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-2 {
+    display: inline-block;
+  }
+
+  .dropdown-content-2 {
+    display: none;
+    position: absolute;
+    /*left: -64px;*/
+    background-color: #f9f9f9;
+    min-width: 105px;
+    box-shadow: -3px 2px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  #list-item-2 {
+    list-style-type: none;
+    list-style:none;
+    text-align: center;
+  }
+
+
+  #list-item-2 li {
+    padding: 10px 0;
+  }
+
+
+  .dropdown-content-2 a:hover {
+    background-color: #f1f1f1
+  }
+
+  .dropdown-2:hover .dropdown-content-2 {
+    display: block;
+  }
+
+  .dropdown-2:hover .dropbtn-2 {
+    background-color: #3e8e41;
+  }
+
+  #list-1-elm-2 {
+    display: none;
+    padding: 0 30px;
+  }
+
+  #list-1-2 {
+    position: relative;
+  }
+
+  #list-1-2:hover #list-1-elm-2 {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    left: 105px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  #list-1-2:hover {
+    background-color: #f1f1f1;
+  }
+
+  .button-2 {
+    display: block;
+    margin: 3px 0;
+    background-color: white;
+    height: 2px;
+    width: 25px;
+  }
+
+  </style>
+
+</head>
+
+<body>
+ <nav>
+
+  <div class = "dropdown-2">
+     <button class = "dropbtn-2">Button</button>
+     <div class = "dropdown-content-2">
+      <ul id = "list-item-2">
+       <li id = "list-1-2">
+           Link 1
+         <ul id = "list-1-elm-2">
+          <li>Link&nbsp;1.1</li>
+          <li>Link&nbsp;1.2</li>
+          <li>Link&nbsp;1.3</li>
+         </ul>
+       </li>
+       <li>Link 2</li>
+       <li>Link 3</li>
+      </ul>
+     </div>
+   </div>
+
+  <div class = "dropdown">
+    <button class = "dropbtn">
+      <span class = "button"></span>
+      <span class = "button"></span>
+      <span class = "button"></span>
+    </button>
+    <div class = "dropdown-content">
+     <ul id = "list-item">
+      <li id = "list-1">
+          Link 1
+        <ul id = "list-1-elm">
+         <li>Link&nbsp;1.1</li>
+         <li>Link&nbsp;1.2</li>
+         <li>Link&nbsp;1.3</li>
+        </ul>
+      </li>
+      <li>Link 2</li>
+      <li>Link 3</li>
+     </ul>
+    </div>
+  </div>
+
+</nav>
+</body>
+</html>
